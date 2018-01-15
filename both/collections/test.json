@@ -1,0 +1,25 @@
+"viewCount": [
+	{
+		"year": 2017,
+		"yearTotal": 345, 
+		"months": [
+			{
+				"month": 1, 
+				"monthTotal": 432, 
+				"days": [
+					{
+						"day": 22, 
+						"dayTotals": 33,
+						"hours": [
+							{
+								"hour": 3,
+								"hourTotal": 22
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+
+];

@@ -1,0 +1,396 @@
+@font-face {
+    font-family: franklinRegular;
+    src: url(/fonts/FranklinGothicBookRegular.ttf);
+}
+
+@font-face {
+    font-family: franklinDemi;
+    src: url(/fonts/FranklinGothicDemiRegular.ttf);
+}
+
+@font-face {
+  font-family: 'linetoCircularProBook';
+  src: url('/fonts/lineto-circular-pro-book.woff') format('woff'),
+       url('/fonts/lineto-circular-pro-book.ttf') format('truetype');
+}
+
+/*h1, h2, h3, h4 {
+	font-family: linetoCircularProBook;
+}
+
+p, a, li {
+	font-family: linetoCircularProBook;
+}*/
+
+body {
+	font-family: linetoCircularProBook;
+}
+
+hr {
+	border: 10px solid;
+}
+
+
+a, a:hover, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.hover {
+	cursor: pointer;
+}
+
+/*.render-target {
+	border: 20px solid #86b3ce;
+	padding-bottom: 40px;
+}*/
+
+#front-layout {
+	/*background-color: #de7fa7;*/
+}
+
+#back-button {
+	position: fixed;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	background: none;
+	z-index: 12;
+}
+
+#back-button svg {
+	height: 100px;
+}
+
+.spacer-50 {
+	height: 50px;
+}
+
+.blue-text {
+	color: #86b3ce;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.navbar {
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-default {
+	background-color: #86b3ce;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: white;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: black;
+}
+
+.active {
+	color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: white;
+}
+
+.navbar-brand img {
+	padding-top: 2px;
+}
+
+.label-primary {
+	background-color: #86b3ce;
+}
+
+#admin-nav .navbar-brand {
+	padding: 4px 4px 4px 15px;
+}
+
+#login-buttons {
+	padding: 15px;
+}
+
+#home-wrapper {
+	padding-top: 60px;
+}
+
+#home-menu {
+	padding-top: 30px;
+}
+
+#home-menu span {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	background-color: #7ad2ff;
+}
+
+#home-menu span:hover {
+	background-color: #68ccff;
+}
+
+.home-logo {
+	max-width: 200px;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.artist-card, .release-card {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.release-card img:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+}
+
+.views-chart {
+	max-height: 200px;
+}
+
+.events-list {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.event-row {
+	padding: 3px 20px 3px 20px;
+	font-size: 10px;
+    font-size: 2.8vw;
+}
+
+.event-row div {
+	padding: 0px 5px 0px 5px;
+}
+
+/*.artist-card:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}*/
+
+/*.results {
+	min-height: 300px;
+}*/
+
+.subscribe-container {
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.subscribe-container:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+}
+
+.artist-card img {
+	object-fit: cover;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 120px;
+	min-height: 120px;
+}
+
+.artist-banner img {
+	min-width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.video-banner-bottom {
+	height: 48px;
+}
+
+.text-banner {
+	height: 400px;
+	display: table;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.text-banner .v-align {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.text-banner h1 {
+	font-size: 30px;
+    font-size: 7vw;
+}
+
+.no-side-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.artist-single-content, 
+.release-single-content, 
+.page-single-content {
+	padding: 1px 20px 10px 20px;
+	position: relative;
+	z-index: 10;
+	background-color: white;
+	/*min-width: 100%;*/
+	max-width: 700px;
+	margin: 0 auto;
+	min-height: 50px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border: 20px solid;
+}
+
+.artist-single-content {
+		margin-top: -50px;
+}
+
+.artist-single-releases {
+	margin-top: 30px;
+}
+
+.page-single-content {
+	padding-top: 15px;
+}
+
+.deleteArtistField {
+	min-width: 100%;
+	padding: 10px 0 10px 0;
+	background-color: red;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.release-banner img {
+	min-width: 100%;
+	margin: auto;
+
+}
+
+.link-list {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: -15px;
+}
+
+.link-list div {
+	margin-bottom: 15px;
+}
+
+
+.link-list a:hover {
+	text-decoration: underline;
+}
+
+.link-list .dragged {
+	background-color: #5cb85c;
+}
+
+.link-list .placeholder {
+	color: white;
+}
+
+.track-row {
+	border-bottom: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.songkick-logo {
+	margin-top: 10px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+	.event-row {
+		padding: 10px;
+		font-size: 14px;
+	    /*font-size: 2vw;*/
+	}
+
+	.event-row div {
+		padding: 0px 20px 0px 20px;
+	}
+
+	.no-side-padding {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.release-banner {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	.release-banner img {
+		max-width: 300px;
+		min-width: 300px;
+	}
+
+	.track-list {
+		padding: 0 40px 0 40px;
+	}
+
+	.artist-single-content, 
+	.release-single-content, 
+	.page-single-content {
+		margin-bottom: 40px;
+	}
+
+	.event-row:hover {
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		cursor: pointer;
+		/*background-color: #86b3ce;*/
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	#mobile-ekstra-menu-item {
+		display: none;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
