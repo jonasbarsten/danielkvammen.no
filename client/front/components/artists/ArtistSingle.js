@@ -10,6 +10,7 @@ import BarstenViewer from '../../../shared/components/utilities/BarstenViewer.js
 import Preloader from '../../../shared/components/preloader/Preloader.js';
 
 import ArtistEvents from './ArtistEvents.js';
+import ArtistEventsBIT from './ArtistEventsBIT.js';
 
 
 class ArtistSingle extends Component {
@@ -135,7 +136,7 @@ class ArtistSingle extends Component {
 									})}
 								</div>
 
-								{songkickUpcoming}
+								<ArtistEventsBIT />
 
 								<hr />
 
