@@ -49,8 +49,15 @@ class ArtistSingle extends Component {
 
 	render () {
 
-		const artist = this.props.artist;
+		// Show loading while waiting for subscriptions
+		if (!this.props.artist) {
+			return <Preloader />
+		}
+
+		let artist = this.props.artist;
+		artist.bandsintownName = "Daniel Kvammen";
 		const songkickUpcoming = (artist && artist.songkickId) ? <div><hr /><ArtistEvents songkickId={artist.songkickId} /></div> : '';
+		const bandsintown = (artist && artist.bandsintownName) ? <div><hr /><ArtistEventsBIT bandsintownName={artist.bandsintownName} /></div> : '';
 		// const songkickPast = (artist && artist.songkickId) ? <div><ArtistEvents songkickId={artist.songkickId} scope="past" /><hr /></div> : '';
 		var links = (artist && artist.links) ? artist.links : [];
 
@@ -94,11 +101,6 @@ class ArtistSingle extends Component {
     		transitionDuration: 0
 		};
 
-		// Show loading while waiting for subscriptions
-		if (!this.props.artist || !this.props.artist) {
-			return <Preloader />
-		}
-
 		return (
 			<div id="artistEdit">
 				
@@ -136,7 +138,7 @@ class ArtistSingle extends Component {
 									})}
 								</div>
 
-								<ArtistEventsBIT />
+								{bandsintown}
 
 								<hr />
 
