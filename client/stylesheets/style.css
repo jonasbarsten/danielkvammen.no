@@ -36,6 +36,20 @@ a, a:hover, a:visited {
 	text-decoration: inherit;
 }
 
+/*Bands in town*/
+
+.bit-widget {
+	min-width: 0 !important;
+}
+
+.bit-widget .bit-event .bit-button {
+	width: 90px !important;
+}
+
+.bit-event-list-title {
+	display: none !important;
+}
+
 .hover {
 	cursor: pointer;
 }
@@ -333,6 +347,10 @@ a, a:hover, a:visited {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
+
+	.bit-widget .bit-event .bit-button {
+		width: 150px !important;
+	}
 
 	.event-row {
 		padding: 10px;
