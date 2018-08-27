@@ -320,7 +320,8 @@ export default class EditArtist extends TrackerReact(React.Component) {
 			const imageUrl = artist.imageUrl ? artist.imageUrl + '?size=100x200' : '';
 
 			if (artist.bannerType == 'picture') {
-				banner = <img src={imageUrl} className="img-responsive" />
+				// banner = <img src={imageUrl} className="img-responsive" />
+				banner = <img src="/images/banner.jpg" className="img-responsive" />
 			}
 
 			if (artist.bannerType == 'text') {

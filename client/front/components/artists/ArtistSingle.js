@@ -70,7 +70,8 @@ class ArtistSingle extends Component {
 
 		if (artist) {
 			if (artist.bannerType == 'picture') {
-				banner = <img src={artist.imageUrl} className="img-responsive" />
+				// banner = <img src={artist.imageUrl} className="img-responsive" />
+				banner = <img src="/images/banner.jpg" className="img-responsive" />
 			}
 
 			if (artist.bannerType == 'text') {

@@ -63,13 +63,14 @@ export default class AdminArtistCard extends Component {
 
 		const editArtistUrl = '/admin/artist/edit/' + this.props.artist._id;
 		const viewCount = (this.props.artist && this.props.artist.views) ? <div>{this.props.artist.views.length} views</div> : '';
+		const banner = <img src="/images/banner.jpg" className="img-responsive" />
 
 		return (
 			<div className="row">
 				
 				<div className="artist-card col-sm-4">
 					<Link to={editArtistUrl}>
-						<img src={this.props.artist.imageUrl} className="img-responsive center-block" />
+						{banner}
 						<p>{this.props.artist.name}</p> {viewCount}
 					</Link>
 				</div>
